@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 90px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+form{
+    margin-top: 40px;
+}
+
+input, button{
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;;
+}
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+    font-size: 70px;
+}
+
+.success-message {
+    padding: 35px;
+    background-color: rgb(104, 255, 104);
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+    text-align: center;
+}
+
+#compare-btn{
+    background-color: rgb(104, 255, 104);
+}
+#trash-btn{
+    background-color: coral;
+}
+
+legend{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
