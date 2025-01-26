@@ -1,0 +1,125 @@
+*{
+    padding: 0;;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+header{
+    margin-top: 50px;
+    display: flex;
+}
+
+header h1{
+    font-size: 50px;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    color: #fc5640;
+}
+
+header img{
+    width: 100px;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario-tarefas input,
+#formulario-tarefas button{
+    padding: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#formulario-tarefas button{
+    background-color: rgb(255, 230, 0);
+    border:none;
+    cursor: pointer;
+}
+
+#escolha-as-cores input{
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+
+#escolha-as-cores .tarefa-cor-verde{
+    background-color: #32CD32;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#escolha-as-cores .tarefa-cor-ciano{
+    background-color: #11dada;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#escolha-as-cores .tarefa-cor-coral{
+    background-color: #fc5640;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#lista-tarefas{
+    width: 90%;
+    text-align: start;
+    display: none;
+}
+
+
+#lista-tarefas li{
+    width: 100%;
+    padding: 8px;
+    padding: auto 8px;
+    list-style: none;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+#lista-tarefas li:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#lista-tarefas li.selecionada{
+    text-decoration: line-through;
+}
+
+
+/*
+- Seja clean e colorido
+_Botões com bordas levemente arredondadas
+-o usuário pode escolher a cor da tarefa
+-o usuario pode excluir a tarefa ao selecion-la e clicar em excluir
+-Barra lateral como se fosse menu? Gostei!
+
+
+Input com nome da tarefa
+Botao de incluir
+Botao de excluir
+3 botoes de opções de cores
+lista
+Riscar a tarefa quando realizada (text-decoration: line-through
+
+Verde Limão (Lime Green): #32CD32
+
+Azul Ciano (Cyan): #00FFFF
+
+Rosa Coral (Coral Pink): #fc5640
+Menu lateral simples, para testar funcionalidade
+
+FAF3E0 Background
+*/

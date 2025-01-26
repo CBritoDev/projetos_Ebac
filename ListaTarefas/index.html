@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefário</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/Tarefário_logo__minimalista__colorido__fundo_transparente-removebg-preview.png" alt="Logo tarefario">
+            <h1>
+                Tarefário
+            </h1>
+        </header>
+        <form id="formulario-tarefas">
+            <input id="tarefa" type="text" placeholder="Qual sua tarefa?" required>
+            <button id="botao-adiciona-tarefa" type="submit">Adicionar +</button>
+            <button id="botao-exclui-tarefa" type="reset">Excluir</button>
+        </form>
+        <form id="escolha-as-cores">
+            <input  type="radio" name="categoria-tarefa" value="#32CD32"">
+            <label class="tarefa-cor-verde" for="laranja">Tarefas rápidas</label>
+            <input  type="radio" name="categoria-tarefa" value="#11dada"">
+            <label class="tarefa-cor-ciano" for="tarefa-planejada">Tarefas planejadas</label>
+            <input  type="radio" name="categoria-tarefa" value="#fc5640">
+            <label class="tarefa-cor-coral"   for="tarefa-planejada">Tarefas importantes</label>
+        </form>
+        <div id="lista-tarefas">
+            <ul>
+            </ul>
+        </div>    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
